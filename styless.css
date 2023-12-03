@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&family=Rubik&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+#intro {
+    height: 100vh;
+    width: 100vw;
+    background-color: #040D12;
+}
+
+.navb {
+    width: 100vw;
+    background-color: #040D12;
+    padding-top: 15px;
+    padding-right: 0;
+    padding-bottom: 15px;
+    font-size: larger;
+    position: fixed;
+    float: right;
+    z-index: 2;
+    margin-right: 0;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 6vh;
+}
+
+.navb ul {
+    list-style: none;
+    padding-right: 2vw;
+}
+
+.btns a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+}
+
+.btns li {
+    height: 40px;
+    padding-top: 18px;
+    width: 120px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.btns li:hover {
+    background-color: #183D3D;
+}
+
+.img img {
+    height: 400px/*54vw*/;
+    width: 400px/*27vw*/;
+    /*min-width: 300px;
+    max-width: 400px;
+    min-height: 300px;
+    max-height: 400px;*/
+    padding-left: 11vw;
+    padding-top: 180px;
+    
+}
+
+.hello {
+    color: #183D3D;
+    font-size: 9em;
+    font-family: 'Rubik', sans-serif;
+    padding: 0;
+    z-index: -100;
+}
+
+.myname {
+    color: #93B1A6;
+    font-size: 4em;
+    font-family: 'Rubik', sans-serif;
+    padding-left: 8px;
+}
+
+.abtme {
+    color: #5C8374;
+    font-size: 2em;
+    font-family: 'Rubik', sans-serif;
+    padding: 8px;
+}
+
+.letters {
+    padding-left: 48vw;
+    margin-top: -405px;
+}
+
+.typed {
+    width: 12ch;
+    overflow: hidden;
+    border-right: 0.15em solid #183D3D;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 7s steps(12), blink .5s step-end infinite alternate;
+}
+
+@keyframes typing {
+    from {
+      width: 0
+    }
+    to {
+        width: 100%;
+      }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+#education {
+    height: 100vh;
+    width: 100vw;
+    background-color: #93B1A6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoed {
+    width: 150px;
+    height: 150px;
+    float: left;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+.edblock {
+    height: fit-content;
+    width: 60vw;
+    background-color: #040D12;
+    padding: 10px;
+    border-radius: 30px;
+    color: #5C8374;
+}
+
+.edus {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 2vh;
+}
+
+.write h3 {
+    font-size: 1.6em;
+    font-family: 'Roboto Slab', serif;
+}
+
+.grd {
+    color: #5C8374;
+    font-size: 1.1em;
+    font-family: 'Rubik', sans-serif;
+}
+
+.writes h3, .grade, .time {
+    color: white !important;
+}
+
+.grade, .time {
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.9em;
+}
+
+#projects {
+    height: 100vh;
+    width: 100vw;
+    background-color: #183D3D;
+    padding: 1% 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+
+.skills, .project-block {
+    background-color: #5C8374;
+    width: 96%;
+    border-radius: 5%;
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 2.2em;
+    color: #040D12;
+    font-family: 'Rubik', sans-serif;
+    padding-top: 10px;
+}
+
+#projects .hr {
+    margin-top: 5px;
+    width: 96%;
+    height: 2px;
+    background-color: aliceblue;
+    border-radius: 90%;
+    margin: auto;
+    margin-top: 5px !important;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .letters {
+        padding-left: 55vw;
+        padding-top: 0;
+    }
+    .btns {
+        justify-content: space-evenly;
+    }
+    .navb {
+        padding-right: 0;
+        font-size: 1.8em;
+    }
+    #intro {
+        display: flex;
+        justify-content: center;
+    }
+    .fortab {
+        align-self: center;
+    }
+    #projects {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 1%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .img img {
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .letters {
+        padding-top: 400px;
+        padding-left: 0;
+        text-align: center;
+    }
+    .navb {
+        font-size: 1.5em;
+    }
+    .btns {
+        gap: 10px;
+    }
+}
