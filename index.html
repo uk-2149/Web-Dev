@@ -1,111 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mondrian Project</title>
-  <style>
-
-  body {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-  }
-
-  .mondrian {
-    background-color: black;
-    display: grid;
-    grid-template-columns: 320px 198px 153px 50px;
-    grid-template-rows: 414px 130px 155px 20px;
-    gap: 9px;
-    width: fit-content;
-  }
-
-  .apple {
-    background-color: #E72F24;
-  }
-
-  .ball {
-    background-color: #F0F1EC;
-    grid-column-start: 2;
-    grid-column-end: 5;
-  }
-
-  .cat {
-    background-color: #F0F1EC;
-    grid-row-start: 2;
-    grid-row-end: 4;
-  }
-
-  .dog {
-    background-color: #F0F1EC;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    grid-column-start: 2;
-    grid-column-end: 4;
-  }
-  
-  .elephant {
-    background-color: #004592;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-
-  .fox {
-    background-color: #F0F1EC;
-    grid-row-start: 3;
-    grid-row-end: 5;
-  }
-
-  .grapes {
-    background-color: #F9D01E;
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
-  
-  .hat {
-    background-color: #232629;
-  }
-
-  .igloo {
-    background-color: #F0F1EC;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    
-  }
-
-    /* 
-    Write your CSS here 
-    Gap Colour: #000
-    White: #F0F1EC
-    Red: #E72F24
-    Black: #232629
-    Blue: #004592
-    Yellow: #F9D01E
-
-    For dimensions, see dimensions.png image.
-    HINT: Remember you can't change the properties of grid lines.
-    But grid lines are transparent!
-    */
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utkal's Portfolio</title>
+    <link rel="stylesheet" href="styless.css">
 </head>
-
 <body>
-  <!-- Write your HTML here -->
-
-  <div class="mondrian">
-    <div class="apple"></div>
-    <div class="ball"></div>
-    <div class="cat"></div>
-    <div class="dog"></div>
-    <div class="elephant"></div>
-    <div class="fox"></div>
-    <div class="igloo"></div>
-    <div class="grapes"></div>
-    <div class="hat"></div>
-  </div>
+ <!--home-page-->
+<div id="intro">
+        <div class="navb">
+            <nav>
+                <ul class="btns">
+                    <a href=""><li>Contact</li></a>
+                    <a href=""><li>About</li></a>         
+                    <a href="#projects"><li>Projects</li></a>
+                    <a href="#education"><li>Education</li></a>
+                    <a href="#intro"><li>Home</li></a>
+                 </ul>
+            </nav>
+        </div>
+    <div class="fortab">
+            <div class="img">
+                <img src="dp.jpg" alt="profile photo" id="ppicture">
+            </div>
+        <div class="letters">
+            <div class="hello">
+                Hello
+            </div>
+            <div class="myname">
+                I am Utkal,
+            </div>
+            <div class="abtme">
+                a tech entusiast, currently a freshman at <br>
+                OUTR (<span class="typed"><i>formerly</i> CET</span>).
+            </div>
+        </div>
+    </div>
+</div>
+<!--Education-->
+<div id="education">
+   <div class="edus">
+      <div class="dav edblock">
+        <img src="davlogo.jpeg" alt="dav_logo" class="dav logoed">
+        <div class="writes">
+        <h3>Dr. ANK DAV Public School</h3>
+        <p class="grd">till 10th</p>
+        <p class="time">2012-2021</p>
+        <p class="grade">Grade- 95%</p>
+        </div>
+      </div>
+      <div class="odm edblock">
+        <img src="odmlogo.jpeg" alt="odm_logo" class="odm logoed">
+        <div class="writes">
+        <h3>ODM Public School</h3>
+        <p class="grd">till 12th</p>
+        <p class="time">2021-2023</p>
+        <p class="grade">Grade- 91.6%</p>
+        </div>
+      </div>
+      <div class="outr edblock">
+        <img src="outrlogo.jpg" alt="outr_logo" class="outr logoed">
+        <div class="writes">
+        <h3>Odisha University of Technology and Research</h3>
+        <p class="grd">Bachelor of Technology, AI and Robotics</p>
+        <p class="time">2023-present</p>
+        </div>
+      </div>
+      <div class="iitm edblock">
+        <img src="iitmlogo.jpg" alt="iitm_logo" class="iitm logoed">
+        <div class="writes">
+        <h3>Indian Institute of Technology, Madras</h3>
+        <p class="grd">Bachelor of Science, Data Science</p>
+        <p class="time">2023-present</p>
+        </div>
+      </div>
+   </div>
+</div>
+<!--Projects-->
+<div id="projects">
+    <div class="skills">
+    <h2 class="skill-text">SKILLS</h2>
+    <div class="hr"></div>
+    </div>
+    <div class="project-block">
+    <h2 class="projects-text">PROJECTS</h2>
+    <div class="hr"></div>
+    </div>
+</div>
 
 </body>
-
 </html>
